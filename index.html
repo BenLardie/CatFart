@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+    <title>CATFART</title>
+  </head>
+  <body>
+    <h1>CAT FART</h1>
+    <div id="cat-image">
+    <img src="imgaes/cat.png" alt="cat">
+    </div>
+    <div id='bubble'>
+      <img src="imgaes/fart.png" alt="bubble">
+    </div>
+    <audio>
+        <source src="fart-2.wav" type="audio/wav">
+    </audio>
+
+<script>
+
+  $(document).ready(function(){
+      var audio = new Audio('fart-2.wav');
+    $("#cat-image").click(function(){
+      $("#bubble").toggle();
+      audio.play();
+    });
+  });
+</script>
+
+  </body>
+</html>
